@@ -6,6 +6,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}:${{ github.sha }}
 
 jobs:
+  secrets: inherit
   # Jobs are ran independently from each other, so build and scan needs to be in a single job.
   build-and-scan:
     name: Build and scan image
