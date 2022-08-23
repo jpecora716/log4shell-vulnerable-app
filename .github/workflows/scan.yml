@@ -27,5 +27,4 @@ jobs:
 
       - name: Scan the image
         run: |
-          echo $IMAGE_NAME
-          ./twistcli images scan --address ${{ secrets.PCC_CONSOLE_URL }} --user $${{ secrets.PCC_USER }} --password ${{ secrets.PCC_PASS }} --details $IMAGE_NAME
+          ./twistcli images scan --address ${{ secrets.PCC_CONSOLE_URL }} --user ${{ secrets.PCC_USER }} --password ${{ secrets.PCC_PASS }} --details $IMAGE_NAME
